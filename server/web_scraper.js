@@ -1,3 +1,5 @@
-export function test() {
+function test() {
     return "test";
 };
+
+module.exports = { test };
