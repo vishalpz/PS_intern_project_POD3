@@ -1,8 +1,4 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
 }
@@ -35,4 +31,20 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+.App {
+  text-align: center;
+  height: 100vh;
+}
+
+.Background {
+  height: 100%;
+}
+
+.ChatbotIcon {
+  height: 6em;
+  position: fixed;
+  bottom: 1em;
+  right: 0.3em;
 }
