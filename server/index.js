@@ -1,4 +1,4 @@
-const web_scraper = require('./web_scraper.js');
+const web_scraper = require('./web_scraper.js')
 
 const express = require("express");
 
@@ -7,7 +7,8 @@ const PORT = process.env.PORT || 3001;
 const app = express();
 
 app.get("/api", (req, res) => {
-    res.json({ message: web_scraper.test() });
+    web_scraper.scrapeData();
+    res.json({ message: "Hello world!" });
   });
 
 app.listen(PORT, () => {
