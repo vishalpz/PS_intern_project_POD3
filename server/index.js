@@ -1,13 +1,18 @@
-const web_scraper = require('./web_scraper.js')
+import express from 'express';
+//import handler from './database_handler.js';
+import scrapeData from './web_scraper.js';
+//const web_scraper = require('./web_scraper.js');
+//const database_handler = require('./database_handler.js');
 
-const express = require("express");
+//const express = require("express");
 
 const PORT = process.env.PORT || 3001;
 
 const app = express();
 
 app.get("/api", (req, res) => {
-    web_scraper.scrapeData();
+    // handler();
+    scrapeData();
     res.json({ message: "Hello world!" });
   });
 

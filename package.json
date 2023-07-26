@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Hello! If you are reading this you have successfully cloned the repo and opened the read.me file",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node server/index.js"
@@ -19,9 +20,14 @@
   },
   "homepage": "https://github.com/vishalpz/PS_intern_project_POD3#readme",
   "dependencies": {
+    "@pinecone-database/pinecone": "^0.1.6",
     "axios": "^1.4.0",
     "cheerio": "^1.0.0-rc.12",
+    "dotenv": "^16.3.1",
     "express": "^4.18.2",
+    "langchain": "^0.0.117",
+    "openai": "^3.3.0",
+    "pdf-parse": "^1.1.1",
     "pretty": "^2.0.0"
   }
 }
