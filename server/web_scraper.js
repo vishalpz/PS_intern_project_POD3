@@ -1,35 +1,35 @@
-const axios = require('axios');
-const cheerio = require('cheerio');
-const pretty = require('pretty');
+import axios from 'axios';
+import cheerio from 'cheerio';
+import pretty from 'pretty';
+
+// const axios = require('axios');
+// const cheerio = require('cheerio');
+// const pretty = require('pretty');
 
 let sitemapUrl = "https://groceries.asda.com/sitemap-recipes.xml";
 
-async function scrapeData() {
+export default async function scrapeData() {
     try {
         let { data } = await axios.get(sitemapUrl);
-        let recipeUrl  = '';
-        let recipeHtml = '';
+        var recipeUrl  = '';
+        var recipeHtml = '';
+        const recipeUrls = [];
 
         const sitemapUrls = cheerio.load(data);
+        
         // Loop through each recipe URL
-        const recipeUrls = sitemapUrls("loc");
-        //console.log(recipeUrls.length);
-        recipeUrls.each( (idx, el) => {
-            //console.log(idx, sitemapUrls(el).text());
+        sitemapUrls('loc').each( (idx, el) => {
             recipeUrl = sitemapUrls(el).text();
-            data = axios.get(recipeUrl);
-            recipeHtml = cheerio.load(data);
-
-            console.log(pretty(recipeHtml.html()));
-            
-
+            console.log(idx);
+            console.log(recipeUrl);
+            recipeUrls.push(recipeUrl);
         });
 
-        //console.log(pretty($.html()));
+        console.log(recipeUrls);
 
     } catch (err) {
         console.log(err);
     };
 };
 
-module.exports = { scrapeData };
+// module.exports = { scrapeData };
