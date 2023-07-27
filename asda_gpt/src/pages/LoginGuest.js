@@ -74,6 +74,7 @@ function Login() {
           ></input>
         </label>
       </form>
+      <button className="LoginButton">Login</button>
     </div>
   );
 }
