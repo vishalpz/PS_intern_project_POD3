@@ -1,4 +1,3 @@
-import background from "./images/ASDA_background.png";
 import chatbotIcon from "./images/Chatbot_icon.png";
 import "./styles/App.css";
 import { Link } from "react-router-dom";
