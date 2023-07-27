@@ -83,7 +83,9 @@ function SignUp() {
   return (
     <div>
       <h1 className="SignUpHeading">New User?</h1>
-      <button className="SignUpButton">Sign up Now</button>
+      <Link to="/SignUp">
+        <button className="SignUpButton">Sign up Now</button>
+      </Link>
     </div>
   );
 }
