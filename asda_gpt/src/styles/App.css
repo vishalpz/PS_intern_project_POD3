@@ -48,3 +48,10 @@
   bottom: 1em;
   right: 0.3em;
 }
+
+body {
+  background-image: url("../images/ASDA_background.png");
+  background-size: cover;
+  background-position: center;
+  /* Add more styles as needed */
+}

@@ -15,6 +15,8 @@ function App() {
         <img className="ChatbotIcon" src={chatbotIcon} alt="chatbot icon"></img>
         {/* Chatbot icon link: https://icons8.com/icons/set/chat-bot--static--green */}
       </Link>
+      <Link to="/Load1">
+        <href>loading</href></Link>
     </div>
   );
 }
