@@ -1,8 +1,9 @@
 import background from "./images/ASDA_background.png";
-import chatbotIcon from "./images/Chatbot_icon.png";
+import chatbotIcon from "./images/Chatbot_icon.png"
 import "./styles/App.css";
 
 function App() {
+
   return (
     // <div className="App">
     //   <header className="App-header">
