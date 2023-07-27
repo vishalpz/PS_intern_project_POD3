@@ -21,7 +21,8 @@
 }
 
 .Box {
-  background-color: rgb(243, 243, 243);
+  background-color: white;
+  box-shadow: 0 0 0 1px rgb(54, 53, 53);
   min-height: 39em;
   position: relative;
   border-radius: 40px;
@@ -39,7 +40,8 @@
 }
 
 .LoginBox {
-  background-color: rgb(120, 190, 33);
+  background-color: white;
+  box-shadow: 0 0 0 1px rgb(54, 53, 53);
   min-height: 34em;
   position: relative;
   border-radius: 40px;
@@ -50,7 +52,7 @@
 }
 
 .LoginHeading {
-  color: white;
+  color: black;
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   padding-top: 7%;
@@ -68,11 +70,11 @@
   border-radius: 1em;
   padding: 1%;
   padding-left: 3%;
-  border-style: none;
+  border: solid 1px black;
 }
 
 .SignUpHeading {
-  color: white;
+  color: black;
   font-family: "Noto Sans", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   padding-top: 3%;
@@ -82,22 +84,23 @@
 
 .SignUpButton {
   font-size: 1.6em;
-  border-radius: 4em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 1px black;
   padding: 0.5em;
   border-style: none;
-  color: rgb(54, 53, 53);
-  background-color: white;
+  color: black;
+  background-color: rgb(120, 190, 33);
   font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   cursor: pointer;
 }
 
 .SignUpButton:hover {
-  box-shadow: 0 0 0 1px rgb(54, 53, 53);
+  background-color: rgb(107, 170, 29);
 }
 
 .GuestHeading {
-  color: white;
+  color: black;
   margin-top: 2em;
   font-size: 1.5em;
 }
