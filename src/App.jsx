@@ -3,7 +3,7 @@ import "./App.css";
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
-  apiKey: "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",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
