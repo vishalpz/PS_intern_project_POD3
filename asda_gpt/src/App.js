@@ -17,7 +17,9 @@ function App() {
       </Link>
       <Link to="/Load1">
         <href className="load">loading</href></Link>
-        </Background>
+      <Link to="/Greet">
+        <href className="greet">greeting</href></Link>
+      </Background>
     </div>
   );
 }
