@@ -4,6 +4,7 @@ import WhiteBox from '../comps/WhiteBox';
 import CloseIcon from '../comps/Close'; 
 import "../styles/App.css";
 import "../styles/LoginGuest.css";
+import { Link } from "react-router-dom";
 
 function LoginGuest() {
   return (

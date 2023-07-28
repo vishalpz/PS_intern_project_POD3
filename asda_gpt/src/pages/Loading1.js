@@ -3,6 +3,7 @@ import chatbotIcon from "../images/Chatbot_icon.png";
 import "../styles/App.css";
 import WhiteBox from '../comps/WhiteBox';
 import CloseIcon from '../comps/Close'; 
+import AnimationSwipe from '../comps/AnimationSwipe';
 
 function Loading1() {
   return (
@@ -10,8 +11,7 @@ function Loading1() {
       <Background1>
         <WhiteBox>
         <CloseIcon/>
-        <h2>Hello, this is content inside the White Box!</h2>
-        <p>You can add any content you want here.</p>
+        <AnimationSwipe />
         </WhiteBox>
       </Background1>
     </div>

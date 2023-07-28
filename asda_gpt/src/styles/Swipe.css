@@ -1,0 +1,17 @@
+
+.image-container {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 50%;
+    height: auto;
+    transition: transform 2s ease; /* Add a transition for smooth animation */
+    transform: translateX(100%); /* Initial position, hidden to the left */
+  }
+  
+  .image.uncover {
+    transform: translateX(0); /* Final position, fully revealed */
+  }
+  
