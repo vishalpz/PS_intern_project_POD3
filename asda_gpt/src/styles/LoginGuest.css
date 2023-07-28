@@ -3,6 +3,8 @@
   height: 90vh;
 }
 
+
+
 .LoginBox {
   background-color: white;
   box-shadow: 0 0 30px rgba(212, 212, 212, 0.7);
@@ -14,6 +16,20 @@
   top: 1.5em;
   bottom: 0.5em;
   left: 25%;
+}
+
+.LoginButton {
+  font-size: 1.3em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 0 1px black;
+  padding: 0.4em;
+  border-style: none;
+  color: black;
+  background-color: rgb(120, 190, 33);
+  font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  width: 30%;
 }
 
 .LoginHeading {
@@ -35,14 +51,14 @@
   border-radius: 0.5em;
   padding: 5px;
   padding-left: 3%;
-  border: solid 1px #A9A9A9;
+  border: solid 1px black;
 }
 
 .SignUpHeading {
   color: rgb(48, 48, 48);
   font-family: "Noto Sans", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
-  padding-top: 3%;
+  padding-top: 1%;
   font-size: 2em;
   margin-bottom: 15px;
 }
@@ -61,6 +77,10 @@
 }
 
 .SignUpButton:hover {
+  background-color: rgb(107, 170, 29);
+}
+
+.LoginButton:hover {
   background-color: rgb(107, 170, 29);
 }
 
