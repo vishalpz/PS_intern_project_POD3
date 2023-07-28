@@ -1,7 +1,7 @@
 import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
-import WhiteBox from '../comps/WhiteBox';
-import CloseIcon from '../comps/Close'; 
+import WhiteBox from "../comps/WhiteBox";
+import CloseIcon from "../comps/Close";
 import "../styles/App.css";
 import "../styles/LoginGuest.css";
 import { Link } from "react-router-dom";
@@ -9,21 +9,21 @@ import { Link } from "react-router-dom";
 function LoginGuest() {
   return (
     <div className="App">
-      <Background1>
+      <Background>
         <WhiteBox>
-        <CloseIcon/>
+          <CloseIcon />
           <LoginBox>
             <Login></Login>
             <SignUp></SignUp>
             <Guest></Guest>
           </LoginBox>
         </WhiteBox>
-      </Background1>
+      </Background>
     </div>
   );
 }
 
-function Background1({ children, ...props }) {
+function Background({ children, ...props }) {
   return (
     <div {...props}>
       <img
@@ -31,7 +31,11 @@ function Background1({ children, ...props }) {
         src={background}
         alt="Main Page of ASDA"
       ></img>
-      <img className="ChatbotIconBlur" src={chatbotIcon} alt="chatbot icon"></img>
+      <img
+        className="ChatbotIconBlur"
+        src={chatbotIcon}
+        alt="chatbot icon"
+      ></img>
       {children}
     </div>
   );
