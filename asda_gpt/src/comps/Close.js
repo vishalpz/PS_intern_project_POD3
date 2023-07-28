@@ -9,6 +9,7 @@ const CloseIcon = () => {
     fontWeight: 'bold',
     position: 'absolute',
     marginTop: '10px',
+    paddingBottom : '10px',
     left: '20px',
     backgroundColor: 'transparent',
     border: 'none',

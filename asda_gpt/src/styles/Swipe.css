@@ -5,6 +5,7 @@
   }
   
   .image {
+    padding-top: 20%;
     width: 50%;
     height: auto;
     transition: transform 2s ease; /* Add a transition for smooth animation */

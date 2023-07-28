@@ -10,8 +10,8 @@ function Loading1() {
     <div className="App">
       <Background1>
         <WhiteBox>
-        <CloseIcon/>
         <AnimationSwipe />
+        <CloseIcon/>
         </WhiteBox>
       </Background1>
     </div>

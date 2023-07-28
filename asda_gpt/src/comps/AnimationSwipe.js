@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import background from "../images/ASDA_background.png";
+import Logo from "../images/asda.png";
 import "../styles/Swipe.css";
 
 
@@ -15,7 +15,7 @@ import "../styles/Swipe.css";
     return (
       <div className="image-container">
         <img
-          src={background}
+          src={Logo}
           className="image"
           alt=""
         />
