@@ -3,62 +3,26 @@
   height: 90vh;
 }
 
-.Background {
-  height: 100%;
-  width: 100%;
-  filter: blur(2px);
-  position: fixed;
-  left: 0;
-  top: 0;
-}
-
-.ChatbotIcon {
-  height: 6em;
-  position: fixed;
-  bottom: 1em;
-  right: 2.5em;
-  filter: blur(2px);
-}
-
-.Box {
-  background-color: white;
-  box-shadow: 0 0 0 1px rgb(54, 53, 53);
-  min-height: 39em;
-  position: relative;
-  border-radius: 40px;
-  width: 90%;
-  min-width: 300px;
-  top: 0.7em;
-  left: 5%;
-}
-
-.Close {
-  position: absolute;
-  left: 2%;
-  top: 2%;
-  height: 2.5em;
-}
-
 .LoginBox {
   background-color: white;
-  box-shadow: 0 0 0 1px rgb(54, 53, 53);
-  min-height: 34em;
+  box-shadow: 0 0 30px rgba(212, 212, 212, 0.7);
   position: relative;
-  border-radius: 40px;
+  border-radius: 0.5em;
   width: 50%;
   min-width: 300px;
-  top: 2.5em;
+  max-height: 28em;
+  top: 1.5em;
+  bottom: 0.5em;
   left: 25%;
 }
 
 .LoginHeading {
-  color: black;
+  color: rgb(48, 48, 48);
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
-  padding-top: 7%;
+  padding-top: 30px;
   font-size: 3em;
-  font-style: italic;
-  margin-bottom: 8%;
+  margin-bottom: 30px;
 }
 
 .InputBox {
@@ -66,30 +30,31 @@
   display: block;
   margin: auto;
   margin-bottom: 4%;
+  height: 15px;
   width: 60%;
-  border-radius: 1em;
-  padding: 1%;
+  border-radius: 0.5em;
+  padding: 5px;
   padding-left: 3%;
-  border: solid 1px black;
+  border: solid 1px #A9A9A9;
 }
 
 .SignUpHeading {
-  color: black;
+  color: rgb(48, 48, 48);
   font-family: "Noto Sans", Tahoma, Geneva, Verdana, sans-serif;
   position: relative;
   padding-top: 3%;
   font-size: 2em;
-  margin-bottom: 2%;
+  margin-bottom: 15px;
 }
 
 .SignUpButton {
   font-size: 1.6em;
   border-radius: 0.5em;
-  box-shadow: 0 0 0 1px black;
+  box-shadow: 0 0 30px rgba(120, 190, 32, 0.4);
   padding: 0.5em;
   border-style: none;
-  color: black;
-  background-color: rgb(120, 190, 33);
+  color: white;
+  background-color: rgb(120, 190, 32);
   font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
   font-weight: bold;
   cursor: pointer;
@@ -100,9 +65,10 @@
 }
 
 .GuestHeading {
-  color: black;
+  color: rgb(48, 48, 48);
   margin-top: 2em;
   font-size: 1.5em;
+  padding-bottom: 60px;
 }
 
 .GuestHeading:hover {

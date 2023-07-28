@@ -1,46 +1,36 @@
 import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
-import close from "../images/Close.png";
+import WhiteBox from '../comps/WhiteBox';
+import CloseIcon from '../comps/Close'; 
+import "../styles/App.css";
 import "../styles/LoginGuest.css";
-import { Link } from "react-router-dom";
 
 function LoginGuest() {
   return (
     <div className="App">
-      <Background>
-        <Box>
+      <Background1>
+        <WhiteBox>
+        <CloseIcon/>
           <LoginBox>
             <Login></Login>
             <SignUp></SignUp>
             <Guest></Guest>
           </LoginBox>
-        </Box>
-      </Background>
+        </WhiteBox>
+      </Background1>
     </div>
   );
 }
 
-function Background({ children, ...props }) {
+function Background1({ children, ...props }) {
   return (
     <div {...props}>
       <img
-        className="Background"
+        className="BackgroundBlur"
         src={background}
         alt="Main Page of ASDA"
       ></img>
-      <img className="ChatbotIcon" src={chatbotIcon} alt="chatbot icon"></img>
-      {children}
-    </div>
-  );
-}
-
-function Box({ children, ...props }) {
-  return (
-    <div className="Box" {...props}>
-      <Link to="/">
-        <img className="Close" src={close} alt="close icon"></img>
-        {/* Close icon: https://icons8.com/icons/set/close--static--middle-gray */}
-      </Link>
+      <img className="ChatbotIconBlur" src={chatbotIcon} alt="chatbot icon"></img>
       {children}
     </div>
   );

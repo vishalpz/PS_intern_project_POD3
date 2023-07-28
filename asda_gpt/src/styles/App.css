@@ -7,7 +7,16 @@
   height: 100%;
   width: 100%;
   position: fixed;
+  top: 0;
   left: 0;
+}
+.BackgroundBlur{
+  height: 100%;
+  width: 100%;
+  filter: blur(2px);
+  position: fixed;
+  left: 0;
+  top: 0;
 }
 
 .ChatbotIconMain {
@@ -15,6 +24,15 @@
   position: fixed;
   bottom: 1em;
   right: 2.5em;
+  
+}
+
+.ChatbotIconBlur {
+  height: 6em;
+  position: fixed;
+  bottom: 1em;
+  right: 2.5em;
+  filter: blur(2px);
 }
 
 body {
@@ -23,4 +41,11 @@ body {
   background-position: center;
   background-position-y: top;
   /* Add more styles as needed */
+}
+.load {
+  height: 6em;
+  position: fixed;
+  bottom: 1em;
+  right: 2.5em;
+
 }
