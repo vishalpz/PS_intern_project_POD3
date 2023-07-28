@@ -10,7 +10,8 @@ function SignUp() {
       <Background>
         <WhiteBox>
           <CloseIcon />
-          <SignUpHeading></SignUpHeading>
+          <SignUpHeading />
+          <SignUpForm />
         </WhiteBox>
       </Background>
     </div>
@@ -38,7 +39,37 @@ function Background({ children, ...props }) {
 function SignUpHeading() {
   return (
     <div>
-      <h1>Sign Up</h1>
+      <h1 className="SignUpHeading2">Sign Up</h1>
+    </div>
+  );
+}
+
+function SignUpForm() {
+  return (
+    <div className="Scrollable">
+      <form>
+        <label className="Label">
+          Name
+          <input type="text" className="InputBox"></input>
+        </label>
+        <label className="Label">
+          Email Address
+          <input type="email" className="InputBox"></input>
+        </label>
+        <label className="Label">
+          Password
+          <input type="password" className="InputBox"></input>
+        </label>
+        <label className="Label">
+          Choose Store
+          <input type="text" className="InputBox"></input>
+        </label>
+        <label className="Label">
+          Dietary Requirements
+          <input type="text" className="InputBox"></input>
+        </label>
+      </form>
+      <button type="submit" className="SignUpButton2">Sign Up</button>
     </div>
   );
 }

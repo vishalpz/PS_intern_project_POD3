@@ -13,9 +13,9 @@ function LoginGuest() {
         <WhiteBox>
           <CloseIcon />
           <LoginBox>
-            <Login></Login>
-            <SignUp></SignUp>
-            <Guest></Guest>
+            <Login />
+            <SignUp />
+            <Guest />
           </LoginBox>
         </WhiteBox>
       </Background>

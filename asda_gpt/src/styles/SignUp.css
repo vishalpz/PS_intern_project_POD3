@@ -1,3 +1,37 @@
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
+}
+
+.SignUpHeading2 {
+  color: rgb(120, 190, 32);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  margin-top: 0.2em;
+  font-size: 4em;
+  margin-bottom: 30px;
+}
+
+.Label {
+  position: relative;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  text-align: left;
+}
+
+.SignUpButton2 {
+  font-size: 1.6em;
+  border-radius: 0.5em;
+  box-shadow: 0 0 30px rgba(120, 190, 32, 0.4);
+  padding: 0.5em;
+  border-style: none;
+  color: white;
+  background-color: rgb(120, 190, 32);
+  font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: -1em;
+}
+
+.Scrollable {
+  overflow-y: scroll;
 }
