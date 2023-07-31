@@ -3,15 +3,13 @@ import chatbotIcon from "../images/Chatbot_icon.png";
 import "../styles/App.css";
 import WhiteBox from '../comps/WhiteBox';
 import CloseIcon from '../comps/Close'; 
-import AnimationSwipe from '../comps/AnimationSwipe';
 
 function Loading1() {
   return (
     <div className="App">
       <Background1>
         <WhiteBox>
-        <AnimationSwipe />
-        <CloseIcon/>
+        <CloseIcon/><p>hi jane!</p>
         </WhiteBox>
       </Background1>
     </div>

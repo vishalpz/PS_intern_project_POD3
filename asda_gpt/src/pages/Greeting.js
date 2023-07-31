@@ -2,7 +2,6 @@ import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import "../styles/App.css";
 import WhiteBox from '../comps/WhiteBox';
-import CloseIcon from '../comps/Close'; 
 import AnimationSwipe from '../comps/AnimationSwipe';
 
 function Greeting() {
@@ -10,7 +9,6 @@ function Greeting() {
     <div className="App">
       <Background1>
         <WhiteBox>
-        <CloseIcon/>
         <AnimationSwipe />
         </WhiteBox>
       </Background1>

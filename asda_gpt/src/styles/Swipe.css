@@ -1,18 +1,19 @@
-
-.image-container {
-    position: relative;
-    overflow: hidden;
-  }
-  
-  .image {
-    padding-top: 20%;
+ .image {
     width: 50%;
     height: auto;
-    transition: transform 2s ease; /* Add a transition for smooth animation */
-    transform: translateX(100%); /* Initial position, hidden to the left */
+    transform: translateX(100%);
+    padding-top: 25%;
+    transition: transform 4s ease;
   }
   
   .image.uncover {
-    transform: translateX(0); /* Final position, fully revealed */
+    transform: translateX(0);
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
   }
   
