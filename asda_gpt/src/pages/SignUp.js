@@ -1,4 +1,5 @@
 import "../styles/SignUp.css";
+import "../styles/App.css";
 import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import WhiteBox from "../comps/WhiteBox";
@@ -9,7 +10,7 @@ function SignUp() {
     <div className="App">
       <Background>
         <WhiteBox>
-          <CloseIcon />
+          <CloseIcon className="SignUpClose" />
           <SignUpHeading />
           <SignUpForm />
         </WhiteBox>
@@ -46,7 +47,7 @@ function SignUpHeading() {
 
 function SignUpForm() {
   return (
-    <div className="Scrollable">
+    <div>
       <form>
         <label className="Label">
           Name
@@ -69,7 +70,9 @@ function SignUpForm() {
           <input type="text" className="InputBox"></input>
         </label>
       </form>
-      <button type="submit" className="SignUpButton2">Sign Up</button>
+      <button type="submit" className="SignUpButton2">
+        Sign Up
+      </button>
     </div>
   );
 }
