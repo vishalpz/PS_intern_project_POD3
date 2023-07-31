@@ -7,7 +7,7 @@ function App() {
   return (
     <div className="AppMain">
       <Background>
-      <Link to="/LoginOrGuest">
+      <Link to="/Greet">
         <img
           className="ChatbotIconMain"
           src={chatbotIcon}
@@ -17,8 +17,6 @@ function App() {
       </Link>
       <Link to="/Load1">
         <href className="load">loading</href></Link>
-      <Link to="/Greet">
-        <href className="greet">greeting</href></Link>
       </Background>
     </div>
   );
