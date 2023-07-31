@@ -4,14 +4,15 @@ import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import WhiteBox from "../comps/WhiteBox";
 import CloseIcon from "../comps/Close";
-import {useState} from "react";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
     <div className="App">
       <Background>
         <WhiteBox>
-          <CloseIcon className="SignUpClose" />
+          <CloseIcon />
           <SignUpHeading />
           <SignUpForm />
         </WhiteBox>
@@ -49,32 +50,31 @@ function SignUpHeading() {
 }
 
 function SignUpForm() {
+  // FORM LOGIC
 
-    // FORM LOGIC
+  const [input, setInput] = useState({
+    name: "",
+    email: "",
+    password: "",
+    store: "",
+    diet: "",
+  });
 
-    const [input, setInput] = useState({
-      name: '',
-      email: '',
-      password: '',
-      store: '',
-      diet: ''
-    })
-    
-    function handleChange(event){
-      const {name, value} = event.target;
-  
-      setInput(prevInput => {
-        return {
-          ...prevInput,
-          [name]: value
-        }
-      })
-    }
-  
-    function handleClick(event) {
-      event.preventDefault();
-      console.log(input);
-    }
+  function handleChange(event) {
+    const { name, value } = event.target;
+
+    setInput((prevInput) => {
+      return {
+        ...prevInput,
+        [name]: value,
+      };
+    });
+  }
+
+  function handleClick(event) {
+    event.preventDefault();
+    console.log(input);
+  }
 
   return (
     <div>
