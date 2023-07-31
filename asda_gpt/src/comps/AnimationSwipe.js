@@ -12,7 +12,7 @@ const AnimationSwipe = () => {
     image.classList.add('uncover');
 
     // Define the duration of the animation in milliseconds
-    const animationDuration = 5000; 
+    const animationDuration = 2500; 
 
     // Delay navigation to the next page after the animation duration
     const nextPage = '/LoginOrGuest'; 

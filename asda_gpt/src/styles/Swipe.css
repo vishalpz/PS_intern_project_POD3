@@ -3,7 +3,7 @@
     height: auto;
     transform: translateX(100%);
     padding-top: 25%;
-    transition: transform 4s ease;
+    transition: transform 2.2s ease;
   }
   
   .image.uncover {
