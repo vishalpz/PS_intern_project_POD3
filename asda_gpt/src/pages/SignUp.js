@@ -49,6 +49,7 @@ function SignUpHeading() {
 }
 
 function SignUpForm() {
+
   // FORM LOGIC
 
   const [input, setInput] = useState({
