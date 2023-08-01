@@ -1,9 +1,9 @@
 import { useState } from "react";
-import "./App.css";
+import "./index.css";
 import { Configuration, OpenAIApi } from "openai";
 
 const configuration = new Configuration({
-  apiKey: "",
+  apiKey: "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",
 });
 const openai = new OpenAIApi(configuration);
 
