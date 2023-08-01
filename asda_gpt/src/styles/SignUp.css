@@ -5,6 +5,9 @@
   margin-top: 0.2em;
   font-size: 4em;
   margin-bottom: 30px;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .Label {
