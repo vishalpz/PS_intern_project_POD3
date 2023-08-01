@@ -1,0 +1,19 @@
+ .image {
+    width: 50%;
+    height: auto;
+    transform: translateX(100%);
+    padding-top: 28%;
+    transition: transform 2.2s ease;
+  }
+  
+  .image.uncover {
+    transform: translateX(0);
+  }
+  
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; 
+  }
+  

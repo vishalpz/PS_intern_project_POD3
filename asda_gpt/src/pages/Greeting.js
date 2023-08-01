@@ -2,14 +2,14 @@ import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import "../styles/App.css";
 import WhiteBox from '../comps/WhiteBox';
-import CloseIcon from '../comps/Close'; 
+import AnimationSwipe from '../comps/AnimationSwipe';
 
-function Loading1() {
+function Greeting() {
   return (
     <div className="App">
       <Background1>
         <WhiteBox>
-        <CloseIcon/><p>hi jane!</p>
+        <AnimationSwipe />
         </WhiteBox>
       </Background1>
     </div>
@@ -30,4 +30,4 @@ function Background1({ children, ...props }) {
   );
 }
 
-export default Loading1;
+export default Greeting;
