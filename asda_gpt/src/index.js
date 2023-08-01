@@ -19,7 +19,7 @@ ReactDOM.render(
       <Route path="/SignUp" element={<SignUp />} />
       <Route path="/Greet" element={<Greeting />} />
       <Route path="/SwipeA" component={<AnimationSwipe/>} />
-      <Route path="/ChatBot" component={<ChatBot/>} />
+      <Route path="/ChatBot" element={<ChatBot/>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
