@@ -5,7 +5,6 @@ import chatbotIcon from "../images/Chatbot_icon.png";
 import WhiteBox from "../comps/WhiteBox";
 import CloseIcon from "../comps/Close";
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 function SignUp() {
   return (
@@ -50,6 +49,7 @@ function SignUpHeading() {
 }
 
 function SignUpForm() {
+
   // FORM LOGIC
 
   const [input, setInput] = useState({

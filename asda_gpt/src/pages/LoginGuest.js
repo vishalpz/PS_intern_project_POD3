@@ -86,7 +86,11 @@ function SignUp() {
 }
 
 function Guest() {
-  return <h2 className="GuestHeading">Continue as a guest</h2>;
+  return (
+    <Link to="/ChatBot">
+      <h2 className="GuestHeading">Continue as a guest</h2>
+    </Link>
+  );
 }
 
 export default LoginGuest;
