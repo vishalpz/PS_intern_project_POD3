@@ -50,9 +50,10 @@ function InputArea() {
             placeholder="Ask something..."
             className="ChatInput"
           ></input>
+          <input type="image" src={SubmitIcon} className="SubmitImage"></input>
         </label>
       </form>
-      <img className="SubmitImage" src={SubmitIcon} alt="submit icon"></img>
+      {/* <img className="SubmitImage" src={SubmitIcon} alt="submit icon"></img> */}
       {/* submit icon link: https://icons8.com/icon/set/submit-arrow/fluency-systems-regular--static--green */}
     </div>
   );
