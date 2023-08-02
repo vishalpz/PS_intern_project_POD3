@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhiteBox = ({ children }) => {
     const whiteBoxStyle = {
-      minHeight: '39em', // Set your desired height
+      Height: '39em', // Set your desired height
       backgroundColor: 'white', // Set the background color to white
       border: '3px solid rgb(120, 190, 32)', // Add a border for better visibility (optional)
       borderRadius: '5px', // Optional: Add rounded corners

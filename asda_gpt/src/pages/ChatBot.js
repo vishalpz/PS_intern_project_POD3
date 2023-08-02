@@ -5,6 +5,7 @@ import CloseIcon from "../comps/Close";
 import VoiceIcon from "../images/Microphone.png";
 import SubmitIcon from "../images/Submit.png";
 import ChatbotIcon2 from "../images/Chatbot_icon2.png";
+import UserIcon from "../images/Profile.png";
 import "../styles/ChatBot.css";
 import "../styles/App.css";
 
@@ -16,6 +17,13 @@ function ChatBot() {
           <CloseIcon />
           <ChatArea>
             <ChatResponse />
+            <UserQuestion />
+            <ChatResponse />
+            <UserQuestion />
+            <ChatResponse />
+            <UserQuestion />
+            <ChatResponse />
+            <UserQuestion />
           </ChatArea>
           <InputArea />
         </WhiteBox>
@@ -45,9 +53,9 @@ function Background1({ children, ...props }) {
 function InputArea() {
   return (
     <div className="InpuArea">
-      <img className="VoiceImage" src={VoiceIcon} alt="mic icon"></img>
-      {/* microphone icon link: https://icons8.com/icon/set/microphone/fluency-systems-regular--static--green */}
       <form className="Form">
+        <img className="VoiceImage" src={VoiceIcon} alt="mic icon"></img>
+        {/* microphone icon link: https://icons8.com/icon/set/microphone/fluency-systems-regular--static--green */}
         <label>
           <input
             type="text"
@@ -72,9 +80,30 @@ function ChatArea({ children, ...props }) {
 
 function ChatResponse() {
   return (
-    <div>
+    <div className="ChatBotResponse">
       <img className="ChatBotIcon2" src={ChatbotIcon2} alt="chatbot icon"></img>
       {/* Chatbot icon link: https://icons8.com/icons/set/bot--static--green */}
+      <p className="Message">
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+      </p>
+    </div>
+  );
+}
+
+function UserQuestion() {
+  return (
+    <div className="UserQuestion">
+      <img className="UserIcon" src={UserIcon} alt="user icon"></img>
+      <p className="Question">
+        "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+      </p>
     </div>
   );
 }
