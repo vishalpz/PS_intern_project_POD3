@@ -10,7 +10,7 @@
   width: 70%;
   padding-left: 3%;
   border: none;
-  box-shadow: 0 0 20px rgb(187, 184, 184);
+  box-shadow: 0 0 10px rgb(153, 151, 151);
   background-color: white;
 }
 
@@ -29,14 +29,18 @@
     position: absolute;
     bottom: 0;
     left: 0;
-    height: 2em;
-    width: 2em;
+    height: 4em;
+    width: 4em;
+    margin-bottom: 2.2em;
+    margin-left: 2em;
 }
 
 .SubmitImage {
     position: absolute;
     bottom: 0;
     right: 0;
-    height: 2em;
-    width: 2em;
+    height: 4em;
+    width: 4em;
+    margin-bottom: 2.2em;
+    margin-right: 2em;
 }

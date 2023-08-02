@@ -25,6 +25,7 @@ function App() {
             src={ProfileIcon}
             alt="profile icon"
           ></img>
+          {/* Profile icon link: https://icons8.com/icon/set/profile/fluency-systems-regular--static--green */}
         </Link>
       </Background>
     </div>
