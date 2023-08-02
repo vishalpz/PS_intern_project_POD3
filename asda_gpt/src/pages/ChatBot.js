@@ -39,7 +39,7 @@ function Background1({ children, ...props }) {
 function InputArea() {
   return (
     <div className="InpuArea">
-      <img className="VoiceImage"></img>
+      <img className="VoiceImage" alt="mic icon"></img>
       <form className="Form">
         <label>
           <input
@@ -49,7 +49,7 @@ function InputArea() {
           ></input>
         </label>
       </form>
-      <img className="SubmitImage"></img>
+      <img className="SubmitImage" alt="submit icon"></img>
     </div>
   );
 }
