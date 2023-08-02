@@ -24,7 +24,6 @@
   position: fixed;
   bottom: 1em;
   right: 2.5em;
-  
 }
 
 .ChatbotIconBlur {
@@ -45,6 +44,11 @@ body {
 .load {
   height: 6em;
   position: relative;
+}
 
-
+.ProfileIcon {
+  height: 4em;
+  position: fixed;
+  top: 0em;
+  right: 2.5em;
 }

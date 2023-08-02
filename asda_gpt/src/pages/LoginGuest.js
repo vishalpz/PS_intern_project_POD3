@@ -15,7 +15,6 @@ function LoginGuest() {
           <LoginBox>
             <Login />
             <SignUp />
-            <Guest />
           </LoginBox>
         </WhiteBox>
       </Background>
@@ -82,14 +81,6 @@ function SignUp() {
         <button className="SignUpButton">Sign up Now</button>
       </Link>
     </div>
-  );
-}
-
-function Guest() {
-  return (
-    <Link to="/ChatBot">
-      <h2 className="GuestHeading">Continue as a guest</h2>
-    </Link>
   );
 }
 
