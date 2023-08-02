@@ -4,6 +4,7 @@ import WhiteBox from "../comps/WhiteBox";
 import CloseIcon from "../comps/Close";
 import VoiceIcon from "../images/Microphone.png";
 import SubmitIcon from "../images/Submit.png";
+import ChatbotIcon2 from "../images/Chatbot_icon2.png";
 import "../styles/ChatBot.css";
 import "../styles/App.css";
 
@@ -13,6 +14,9 @@ function ChatBot() {
       <Background1>
         <WhiteBox>
           <CloseIcon />
+          <ChatArea>
+            <ChatResponse />
+          </ChatArea>
           <InputArea />
         </WhiteBox>
       </Background1>
@@ -53,8 +57,24 @@ function InputArea() {
           <input type="image" src={SubmitIcon} className="SubmitImage"></input>
         </label>
       </form>
-      {/* <img className="SubmitImage" src={SubmitIcon} alt="submit icon"></img> */}
       {/* submit icon link: https://icons8.com/icon/set/submit-arrow/fluency-systems-regular--static--green */}
+    </div>
+  );
+}
+
+function ChatArea({ children, ...props }) {
+  return (
+    <div {...props} className="ChatArea">
+      {children}
+    </div>
+  );
+}
+
+function ChatResponse() {
+  return (
+    <div>
+      <img className="ChatBotIcon2" src={ChatbotIcon2} alt="chatbot icon"></img>
+      {/* Chatbot icon link: https://icons8.com/icons/set/bot--static--green */}
     </div>
   );
 }
