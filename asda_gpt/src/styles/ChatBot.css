@@ -1,3 +1,19 @@
+.ChatArea {
+  height: 76%;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  top: 2.8em;
+}
+
+.ChatBotIcon2 {
+  height: 4em;
+  width: 4em;
+  position: absolute;
+  left: 2em;
+  bottom: 0;
+}
+
 .ChatInput {
   font-size: 1em;
   display: block;
@@ -10,33 +26,37 @@
   width: 70%;
   padding-left: 3%;
   border: none;
-  box-shadow: 0 0 20px rgb(187, 184, 184);
+  box-shadow: 0 0 10px rgb(153, 151, 151);
   background-color: white;
 }
 
 .InputArea {
-    position: relative;
-    height: 100%;
+  position: relative;
+  height: 100%;
 }
 
 .Form {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 
 .VoiceImage {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    height: 2em;
-    width: 2em;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 4em;
+  width: 4em;
+  margin-bottom: 2.2em;
+  margin-left: 2em;
 }
 
 .SubmitImage {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    height: 2em;
-    width: 2em;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 5.5em;
+  width: 5.5em;
+  margin-bottom: 3.2em;
+  margin-right: 3.2em;
 }
