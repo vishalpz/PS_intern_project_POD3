@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useRef, useEffect } from "react";
 import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import WhiteBox from "../comps/WhiteBox";
@@ -21,9 +21,11 @@ function ChatBot() {
   };
 
   const handleInputSubmit = () => {
-    setUserQuestions([...userQuestions, inputValue]);
-    setInputValue("");
-  }
+    setTimeout(() => {
+      setUserQuestions([...userQuestions, inputValue]);
+      setInputValue("");
+    }, 500);
+  };
 
   //COMPONENTS
 
@@ -32,16 +34,12 @@ function ChatBot() {
       <Background1>
         <WhiteBox>
           <CloseIcon />
-          <ChatArea>
-            <ChatResponse />
-            {userQuestions.map((question, index) => (
-              <UserQuestion key={index} question={question} />
-            ))}
-          </ChatArea>
-          <InputArea 
-          inputValue = {inputValue}
-          onInputChange = {handleInputValueChange}
-          onSubmit={handleInputSubmit} />
+          <ChatArea userQuestions={userQuestions} />
+          <InputArea
+            inputValue={inputValue}
+            onInputChange={handleInputValueChange}
+            onSubmit={handleInputSubmit}
+          />
         </WhiteBox>
       </Background1>
     </div>
@@ -86,7 +84,7 @@ function InputArea({ inputValue, onInputChange, onSubmit }) {
             type="text"
             placeholder="Ask something..."
             className="ChatInput"
-            value = {inputValue}
+            value={inputValue}
             onChange={(event) => onInputChange(event.target.value)}
           ></input>
           <input
@@ -102,10 +100,23 @@ function InputArea({ inputValue, onInputChange, onSubmit }) {
   );
 }
 
-function ChatArea({ children, ...props }) {
+function ChatArea({ userQuestions, chatResponses }) {
+  //LOGIC
+  const chatAreaRef = useRef(null);
+
+  useEffect(() => {
+    chatAreaRef.current.scrollTop = chatAreaRef.current.scrollHeight;
+  }, [userQuestions, chatResponses]);
+
+  //COMPONENTS
   return (
-    <div {...props} className="ChatArea">
-      {children}
+    <div className="ChatArea" ref={chatAreaRef}>
+      {userQuestions.map((question, index) => (
+        <div key={index}>
+          <UserQuestion question={question} />
+          <ChatResponse />
+        </div>
+      ))}
     </div>
   );
 }
@@ -133,8 +144,6 @@ function UserQuestion({ question }) {
     <div className="UserQuestion">
       <img className="UserIcon" src={UserIcon} alt="user icon" />
       <p className="Question">
-        {/* "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores */}
         {/* There can also be images in the text bubbles */}
         {/* <img className="Image" src={background}></img> */}
         {question}
