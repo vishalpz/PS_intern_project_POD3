@@ -1,3 +1,4 @@
+import { useState } from "react";
 import background from "../images/ASDA_background.png";
 import chatbotIcon from "../images/Chatbot_icon.png";
 import WhiteBox from "../comps/WhiteBox";
@@ -10,6 +11,22 @@ import "../styles/ChatBot.css";
 import "../styles/App.css";
 
 function ChatBot() {
+  //LOGIC
+
+  const [inputValue, setInputValue] = useState("");
+  const [userQuestions, setUserQuestions] = useState([]);
+
+  const handleInputValueChange = (value) => {
+    setInputValue(value);
+  };
+
+  const handleInputSubmit = () => {
+    setUserQuestions([...userQuestions, inputValue]);
+    setInputValue("");
+  }
+
+  //COMPONENTS
+
   return (
     <div className="App">
       <Background1>
@@ -17,15 +34,14 @@ function ChatBot() {
           <CloseIcon />
           <ChatArea>
             <ChatResponse />
-            <UserQuestion />
-            <ChatResponse />
-            <UserQuestion />
-            <ChatResponse />
-            <UserQuestion />
-            <ChatResponse />
-            <UserQuestion />
+            {userQuestions.map((question, index) => (
+              <UserQuestion key={index} question={question} />
+            ))}
           </ChatArea>
-          <InputArea />
+          <InputArea 
+          inputValue = {inputValue}
+          onInputChange = {handleInputValueChange}
+          onSubmit={handleInputSubmit} />
         </WhiteBox>
       </Background1>
     </div>
@@ -50,10 +66,19 @@ function Background1({ children, ...props }) {
   );
 }
 
-function InputArea() {
+function InputArea({ inputValue, onInputChange, onSubmit }) {
+  //LOGIC
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    onSubmit();
+  };
+
+  //COMPONENT
+
   return (
     <div className="InpuArea">
-      <form className="Form">
+      <form className="Form" onSubmit={handleSubmit}>
         <img className="VoiceImage" src={VoiceIcon} alt="mic icon"></img>
         {/* microphone icon link: https://icons8.com/icon/set/microphone/fluency-systems-regular--static--green */}
         <label>
@@ -61,8 +86,15 @@ function InputArea() {
             type="text"
             placeholder="Ask something..."
             className="ChatInput"
+            value = {inputValue}
+            onChange={(event) => onInputChange(event.target.value)}
           ></input>
-          <input type="image" src={SubmitIcon} className="SubmitImage"></input>
+          <input
+            type="image"
+            src={SubmitIcon}
+            alt="submit button"
+            className="SubmitImage"
+          ></input>
         </label>
       </form>
       {/* submit icon link: https://icons8.com/icon/set/submit-arrow/fluency-systems-regular--static--green */}
@@ -96,15 +128,16 @@ function ChatResponse() {
   );
 }
 
-function UserQuestion() {
+function UserQuestion({ question }) {
   return (
     <div className="UserQuestion">
-      <img className="UserIcon" src={UserIcon} alt="user icon"></img>
+      <img className="UserIcon" src={UserIcon} alt="user icon" />
       <p className="Question">
-        "At vero eos et accusamus et iusto odio dignissimos ducimus qui
-        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores
+        {/* "At vero eos et accusamus et iusto odio dignissimos ducimus qui
+        blanditiis praesentium voluptatum deleniti atque corrupti quos dolores */}
         {/* There can also be images in the text bubbles */}
         {/* <img className="Image" src={background}></img> */}
+        {question}
       </p>
     </div>
   );
