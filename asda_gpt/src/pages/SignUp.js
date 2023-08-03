@@ -1,7 +1,7 @@
 import "../styles/SignUp.css";
 import "../styles/App.css";
 import background from "../images/ASDA_background.png";
-import chatbotIcon from "../images/Chatbot_icon.png";
+import chatbotIcon from "../images/Chatbot_icon2.png";
 import WhiteBox from "../comps/WhiteBox";
 import CloseIcon from "../comps/Close";
 import { useState } from "react";

@@ -1,5 +1,5 @@
 import background from "../images/ASDA_background.png";
-import chatbotIcon from "../images/Chatbot_icon.png";
+import chatbotIcon from "../images/Chatbot_icon2.png";
 import "../styles/App.css";
 import WhiteBox from '../comps/WhiteBox';
 import AnimationSwipe from '../comps/AnimationSwipe';

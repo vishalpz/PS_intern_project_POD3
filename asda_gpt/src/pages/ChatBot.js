@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import background from "../images/ASDA_background.png";
-import chatbotIcon from "../images/Chatbot_icon.png";
+import chatbotIcon from "../images/Chatbot_icon2.png";
 import WhiteBox from "../comps/WhiteBox";
 import CloseIcon from "../comps/Close";
 import VoiceIcon from "../images/Microphone.png";
