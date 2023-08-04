@@ -125,3 +125,24 @@
       margin-right: 0.5%;
   }
 }
+
+.Load1Heading {
+  color: rgb(82, 82, 82);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding-top: 10px;
+  font-size: 3em;
+  margin-bottom: 5%;
+}
+p{
+  font-weight: 500;
+  font-size: 1.75em;
+  color: rgb(82, 82, 82);
+}
+.message{
+  color: rgb(120, 190, 32);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding-top: 10px;
+  font-size: 2em;
+}
