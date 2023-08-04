@@ -9,7 +9,6 @@ import Greeting from "./pages/Greeting";
 import ChatBot from "./pages/ChatBot";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import AnimationSwipe from "./comps/AnimationSwipe";
-import PromptButtonContainer from "./containers/PromptButtonContainer";
 
 ReactDOM.render(
   <BrowserRouter>
@@ -21,7 +20,6 @@ ReactDOM.render(
       <Route path="/Greet" element={<Greeting />} />
       <Route path="/SwipeA" component={<AnimationSwipe/>} />
       <Route path="/ChatBot" element={<ChatBot/>} />
-      <Route path="/PromptB" component={<PromptButtonContainer/>} />
     </Routes>
   </BrowserRouter>,
   document.getElementById("root")
