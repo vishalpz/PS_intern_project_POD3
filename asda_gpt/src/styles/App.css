@@ -15,6 +15,7 @@
   width: 100%;
   filter: blur(2px);
   position: fixed;
+  background-repeat: no-repeat;
   left: 0;
   top: 0;
 }
