@@ -69,6 +69,9 @@ function InputArea({ inputValue, onInputChange, onSubmit }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
+    if (!inputValue) {
+      return;
+    }
     onSubmit();
   };
 
