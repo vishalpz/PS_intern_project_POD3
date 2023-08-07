@@ -1,0 +1,15 @@
+{
+  "userID": "0",
+  "conversationID": "1",
+  "response": "This is the chatbot response",
+  "chatHistory": [
+    {
+      "role": "bot",
+      "message": "This is another chatbot response"
+    },
+    {
+      "role": "user",
+      "messgae": "This is a user response"
+    }
+  ]
+}

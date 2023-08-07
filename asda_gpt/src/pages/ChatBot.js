@@ -21,10 +21,8 @@ function ChatBot() {
   };
 
   const handleInputSubmit = () => {
-    setTimeout(() => {
-      setUserQuestions([...userQuestions, inputValue]);
-      setInputValue("");
-    }, 500);
+    setUserQuestions([...userQuestions, inputValue]);
+    setInputValue("");
   };
 
   //COMPONENTS
