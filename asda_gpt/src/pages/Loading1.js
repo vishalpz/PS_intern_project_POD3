@@ -16,7 +16,7 @@ function ChatBot() {
         <WhiteBox>
           <CloseIcon />
           <h1 className="Load1Heading">Chat with ASDA GPT</h1>
-          <p className="message">How can I help you today?</p>
+          <p className="message">How can I help you?</p>
           <PromptButtonContainer/>
           <p>or...</p>
           <InputArea />
