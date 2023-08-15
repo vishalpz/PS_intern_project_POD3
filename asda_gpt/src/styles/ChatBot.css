@@ -1,0 +1,148 @@
+.ChatArea {
+  height: 76%;
+  width: 95%;
+  position: relative;
+  display: block;
+  margin: auto;
+  top: 2.8em;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.ChatBotResponse {
+  height: 100%;
+  text-align: start;
+  display: inline;
+  position: relative;
+  left: 2em;
+  bottom: 0;
+  width: 90%;
+}
+
+.ChatBotIcon2 {
+  float: left;
+  height: 4em;
+  width: 4em;
+  left: 2em;
+}
+
+.Message {
+  width: 45%;
+  margin-top: 1.5em;
+  margin-left: 4.5em;
+  box-shadow: 0 0 10px rgb(120, 190, 32);
+  padding: 0.7em;
+  border-radius: 0.5em;
+  font-family: "Verdana", "Segoe UI", Tahoma, Geneva, sans-serif;
+  background-color: rgb(247, 248, 248);
+}
+
+.UserQuestion {
+  height: 100%;
+  display: inline;
+  position: relative;
+  right: 2em;
+  bottom: 0;
+  width: 90%;
+  margin-left: auto;
+}
+
+.UserIcon {
+  float: right;
+  height: 4em;
+  width: 4em;
+  padding-left: 1em;
+}
+
+.Question {
+  margin-top: 1.5em;
+  margin-left: auto;
+  width: 45%;
+  margin-right: 4em;
+  box-shadow: 0 0 10px rgb(120, 190, 32);
+  padding: 0.7em;
+  border-radius: 0.5em;
+  font-family: "Verdana", "Segoe UI", Tahoma, Geneva, sans-serif;
+  background-color: rgb(247, 248, 248);
+  text-align: end;
+}
+
+.ChatInput {
+  font-size: 1em;
+  display: block;
+  margin: auto;
+  margin-bottom: 4%;
+  margin-top: 4%;
+  height: 2em;
+  border-radius: 0.5em;
+  padding: 5px;
+  width: 70%;
+  padding-left: 3%;
+  border: none;
+  box-shadow: 0 0 10px rgb(153, 151, 151);
+  background-color: rgb(247, 248, 248);
+}
+
+.InputArea {
+  position: relative;
+  height: 100%;
+}
+
+.Form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+.VoiceImage {
+  cursor: pointer;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  size: 30%;
+  margin-bottom: 4%;
+  margin-left: 3%;
+}
+
+.SubmitImage {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  size: 100%;
+  margin-bottom: 4%;
+  margin-right: 3%;
+}
+
+.Image {
+  max-height: 16em;
+}
+
+@media only screen and (max-width: 800px) {
+  .VoiceImage {
+      margin-left: 0.5%;
+  }
+  .SubmitImage {
+      margin-right: 0.5%;
+  }
+}
+
+.Load1Heading {
+  color: rgb(82, 82, 82);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding-top: 10px;
+  font-size: 3em;
+  margin-bottom: 5%;
+}
+p{
+  font-weight: 500;
+  font-size: 1.75em;
+  color: rgb(82, 82, 82);
+}
+.message{
+  color: rgb(120, 190, 32);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  position: relative;
+  padding-top: 10px;
+  font-size: 2em;
+}

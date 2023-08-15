@@ -15,6 +15,7 @@
   width: 100%;
   filter: blur(2px);
   position: fixed;
+  background-repeat: no-repeat;
   left: 0;
   top: 0;
 }
@@ -24,7 +25,6 @@
   position: fixed;
   bottom: 1em;
   right: 2.5em;
-  
 }
 
 .ChatbotIconBlur {
@@ -45,6 +45,11 @@ body {
 .load {
   height: 6em;
   position: relative;
+}
 
-
+.ProfileIcon {
+  height: 4em;
+  position: fixed;
+  top: 0em;
+  right: 2.5em;
 }
